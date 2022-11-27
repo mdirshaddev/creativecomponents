@@ -1,0 +1,24 @@
+{
+  "name": "creativecomponents",
+  "version": "0.0.0",
+  "description": "My Component Library with website and docs. An Open Source Project.",
+  "keywords": [
+    "nx",
+    "pnpm",
+    "npm-registry",
+    "workspace",
+    "react",
+    "next",
+    "storybook",
+    "website",
+    "documentation",
+    "library",
+    "open-source-library"
+  ],
+  "author": {
+    "name": "Md Irshad",
+    "email": "mdirshaddev+github@gmail.com",
+    "url": "https://mdirshaddev.github.io"
+  },
+  "license": "MIT"
+}
