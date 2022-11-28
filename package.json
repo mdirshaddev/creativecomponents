@@ -1,24 +1,28 @@
 {
   "name": "creativecomponents",
   "version": "0.0.0",
-  "description": "My Component Library with website and docs. An Open Source Project.",
-  "keywords": [
-    "nx",
-    "pnpm",
-    "npm-registry",
-    "workspace",
-    "react",
-    "next",
-    "storybook",
-    "website",
-    "documentation",
-    "library",
-    "open-source-library"
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
   ],
-  "author": {
-    "name": "Md Irshad",
-    "email": "mdirshaddev+github@gmail.com",
-    "url": "https://mdirshaddev.github.io"
+  "scripts": {
+    "build:web": "pnpm --filter web build",
+    "build:docs": "pnpm --filter docs build",
+    "dev:web": "pnpm --filter web dev",
+    "dev:docs": "pnpm --filter docs dev",
+    "lint:web": "pnpm --filter web lint",
+    "lint:docs": "pnpm --filter docs lint",
+    "format": "prettier --write \"**/*.{js,ts,tsx,md,scss,css}\"",
+    "changelog": "rm CHANGELOG.md && node scripts/generate-changelog.js"
   },
-  "license": "MIT"
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "nx": "^15.2.1",
+    "prettier": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.17.0"
 }

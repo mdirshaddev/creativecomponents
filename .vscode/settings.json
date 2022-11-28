@@ -1,0 +1,6 @@
+{
+  "eslint.workingDirectories": [{ "pattern": "apps/*/" }, { "pattern": "packages/*/" }],
+  "vim.disableExtension": true,
+  "editor.tabSize": 2,
+  "editor.autoIndent": "full"
+}
